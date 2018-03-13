@@ -97,7 +97,7 @@ gulp.task('sass',['js', 'html'], () =>
     }),
       uncss({
         html: [PATH.DIST + '/*.html'],
-        ignore: [/^\.fa-angle-*/,/^\.fa-external-link$/,/\.checked/,/^\.fa-book$/,/^\.fa-wrench$/,/^\.fa-check$/,/fa-ul/, /fa-li/,/^blockquote/,/^pre/,/^code/,/^em/]
+        ignore: [/^\.fa-angle-*/,/^\.fa-external-link$/,/^\.fa-wordpress$/,/\.checked/,/^\.fa-book$/,/^\.fa-wrench$/,/^\.fa-check$/,/fa-ul/, /fa-li/,/^blockquote/,/^pre/,/^code/,/^em/,/^\.card*/]
       })
     ]))
     .pipe(gulp.dest(PATH.SASS_DIST ))

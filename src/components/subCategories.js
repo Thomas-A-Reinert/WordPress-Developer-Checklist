@@ -28,7 +28,7 @@ class SubCategories extends Component {
     return (
       <div className="container">
         {categoriesObj.map((chunk, i) => {
-          return <div className="row">{chunk}</div>;
+          return <div>{chunk}</div>;
         })}
       </div>
     );

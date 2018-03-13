@@ -1,6 +1,6 @@
 .card {
-  border-color: $card-header-bg !important;
-  border-radius: 0 !important;
+  border-color: $card-header-bg;
+  border-radius: 0;
   background: $card-bg;
 
   .card-header {
@@ -13,29 +13,15 @@
   }
   
   .card-body {
-    padding: 1rem 3rem 1rem 1rem !important;
-    
-    // .card-text {
-    //   padding: 1rem 3rem 1rem 1rem;
-    // }
+    padding: 1rem 3rem 1rem 1rem;
+  }
+
+  .card-footer {
+    padding: .5rem 1rem;
   }
 }
 
-/*!
- * not working after this - for whatever reason
-*/
-
-// .taglist {
-//   border-top: 1px solid black;
-// }
-
 .tags {
-  // border-radius: 5px;
-  // border: 1px solid $outline-dark;
-  // background: $dark-bg;
-  font-size: 80%;
-}
-
-body {
-    background: green !important;
+  padding: .175rem .75rem;
+  font-size: 70%;
 }

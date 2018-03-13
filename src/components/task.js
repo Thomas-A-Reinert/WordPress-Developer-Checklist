@@ -48,6 +48,8 @@ const TypeIcon = type => {
     return icon + "fa-book";
   } else if (type === "tools") {
     return icon + "fa-wrench";
+  } else if (type === "codex") {
+    return icon + "fa-wordpress";
   }
 };
 
@@ -69,7 +71,7 @@ class Task extends Component {
 
         {task.developped && (
           <div className="card-body">
-            <div className="card-text" style="padding: 1rem 3rem 1rem 1rem;">
+            <div className="card-text">
               {(task.explications || task.code) && (
                 <div className="explications">
                   {task.explications && (
@@ -116,11 +118,11 @@ class Task extends Component {
 
         {task.tags && (
           <div className="card-footer taglist">
-            {task.tags.map((tag, j) => {
+            {task.tags.map((tag) => {
               return (
-                <span className="btn btn-outline-dark btn-sm tags mr-1">
+                <button className="btn btn-outline-dark tags mr-1">
                   {tag.label}
-                </span>
+                </button>
               );
             })}
           </div>

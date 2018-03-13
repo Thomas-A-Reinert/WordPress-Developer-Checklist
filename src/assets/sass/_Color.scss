@@ -2,9 +2,37 @@
 // Color
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-$color-initial: #fff !default;
-$color-primary: $green !default;
-$color-secondary: $blue !default;
-$color-tertiary: #f4f5f6 !default;
-$color-quaternary: #d1d1d1 !default;
-$color-quinary: #e1e1e1 !default;
+// $color-initial: #fff !default;
+// $color-primary: $green !default;
+// $color-secondary: $blue !default;
+// $color-tertiary: #f4f5f6 !default;
+// $color-quaternary: #d1d1d1 !default;
+// $color-quinary: #e1e1e1 !default;
+// $card-header-bg: rgb(185, 185, 185) !default;
+
+$body-background: #ddd;
+
+$blue:                rgba(0,0,255,1);
+$green:               rgba(0,255,0,1);
+$yellow:              #F0CA4D;
+$orange:              rgba(227,123,64,1);
+$red:                 rgba(255,0,0,1);
+$grey:                rgba(0,0,0,.5);
+
+$bg-medium:           rgba(89,98,107,1);
+$col-medium:          rgba(255,255,255,1);
+
+$dark-bg:             rgba(89,98,107,1);
+$outline-dark:        rgba(0,0,0,.25);
+$dark-content:        rgba(255,255,255,1);
+
+$light-bg:            rgba(255,255,255,1);
+$light-content:       rgba(89,98,107,1);
+
+$card-bg:             rgba(255,255,255,0.9);
+
+$card-header-bg:      rgba(52,58,64,.5);
+$card-header-content: rgba(255,255,255,.9);
+
+$header-bg-color:       $grey;
+$header-bg-input:     rgba(0,0,0,0.9);

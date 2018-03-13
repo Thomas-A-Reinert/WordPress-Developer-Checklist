@@ -18,7 +18,7 @@ const Toolbar = ({ checklists, selected }, { mutate, mutation }) => {
           })}
         </select>
       </div>
-      <div className="col-md-8 mt-auto mb-3 button-toolbar show-on-mobile">
+      {/* <div className="col-md-8 mt-auto mb-3 button-toolbar show-on-mobile">
         <div className="pull-right ml-1 mr-1">
           <a className="btn btn-outline-light" href="#" onClick={() => window.print()}>
             <i className="fa fa-print fa-lg" aria-hidden="true"></i> Generate report
@@ -34,6 +34,17 @@ const Toolbar = ({ checklists, selected }, { mutate, mutation }) => {
             <i className="fa fa-floppy-o fa-lg" aria-hidden="true"></i> Save
           </a>
         </div>
+      </div> */}
+      <div className="col-md-8 mt-auto mb-3 button-toolbar show-on-mobile">
+          <button className="pull-right btn btn-sm btn-outline-light ml-1" onClick={() => window.print()}>
+            <i className="fa fa-print fa-lg" aria-hidden="true"></i> Generate report
+          </button>
+          <button className="pull-right btn btn-sm btn-outline-light ml-1" onClick={mutation(RESET, selected)}>
+            <i className="fa fa-refresh fa-lg" aria-hidden="true"></i> Reset
+          </button>
+          <button className="pull-right btn btn-sm btn-outline-light" onClick={mutation(SAVE)}>
+            <i className="fa fa-floppy-o fa-lg" aria-hidden="true"></i> Save
+          </button>
       </div>
     </div>
   );

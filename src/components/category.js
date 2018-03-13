@@ -6,7 +6,7 @@ import Task from "./task";
 class Category extends Component {
   render({ category }) {
     return (
-      <div className="col-12">
+      <div className="">
         <h3 className="category-title">{category.title}</h3>
         {category.tasks.map(task => <Task key={task.id} task={task} />)}
       </div>
