@@ -1,0 +1,423 @@
+{
+  "name": "Search Engine Optimization (SEO)",
+  "group_categories": [
+    {
+      "title_group": "Search Engine Optimization (SEO)",
+      "categories": [
+        {
+          "title": "URL",
+          "tasks": [
+            {
+              "priority": "high",
+              "explications": "Use a descriptive page url, which should reflect your targeted keyword",
+              "title":"Descriptive page url"
+            },
+            {
+              "priority": "high",
+              "explications": "Do not strip out the file extension on URLs",
+              "title":"No strip out file extension"
+            },
+            {
+              "priority": "high",
+              "explications": "Security is a top priority for Google",
+              "title":"Improve Security"
+            },
+            {
+              "priority": "medium",
+              "title":"Split words using hyphens"
+            },
+            {
+              "priority": "high",
+              "explications": "Choose a country-specific domain, for better local search results",
+              "title":"Country-specific domain"
+            },
+            {
+              "priority": "high",
+              "explications": "Subdomains are seen as separate domains",
+              "title":"Subdomains"
+            }
+          ]
+        },
+        {
+          "title": "Accessibility",
+          "tasks": [
+            {
+              "priority": "high",
+              "explications": "Provide a 403 - Access denied page",
+              "title":"403 page"
+            },
+            {
+              "priority": "high",
+              "explications": "Provide a 404 - Page not found page",
+              "title":"404 page"
+            },
+            {
+              "priority": "medium",
+              "explications": "With Google Sitelink search box, people can reach your content more quickly",
+              "title":"Google Sitelink "
+            },
+            {
+              "priority": "high",
+              "explications": "Avoid 404 FILE_NOT_FOUND errors",
+              "title":"No 404 FILE_NOT_FOUND"
+            },
+            {
+              "priority": "high",
+              "explications": "Use divs instead of tables for layout. Using tables is not semantically correct.",
+              "title":"Use divs"
+            },
+            {
+              "priority": "low",
+              "explications": "Redirect all your links to the new location via .htaccess",
+              "title":"Redirect all links to the new location"
+            },
+            {
+              "priority": "medium",
+              "explications": "Implement the rel=\"next\" and rel=\"prev\" attributes to links",
+              "code":"rel=\"next\"\nrel=\"prev\"",
+              "title":"Implement the rel"
+            },
+            {
+              "priority": "high",
+              "explications": "Performance and loading time is important",
+              "title":"Good loading time"
+            },
+            {
+              "priority": "medium",
+              "explications": "Avoid redirects if possible. Use 301 redirect instead of 302",
+              "title":"Avoid redirects"
+            },
+            {
+              "priority": "medium",
+              "explications": "Markup your code with rich snippets, they show up on the search results page",
+              "title":"Rich snippets"
+            },
+            {
+              "priority": "high",
+              "explications": "Block pages which should not be indexed via the robots.txt file or",
+              "code":"<meta name=\"robots\" content=\"\">",
+              "title":"Block pages via the robots.txt"
+            },
+            {
+              "priority": "high",
+              "explications": "Write valid code ( )",
+              "title":"Valid code",
+              "links": [
+                {
+                  "path": "https://validator.w3.org/",
+                  "text": "HTML Validator",
+                  "type": "link"
+                },
+                {
+                  "path": "https://jigsaw.w3.org/css-validator/",
+                  "text": "CSS Validator",
+                  "type": "link"
+                }
+              ]
+            },
+            {
+              "priority": "medium",
+              "explications": "Use WAI-Aria tags to help machines understand your code",
+              "title":"WAI-Aria tags"
+            }
+          ]
+        },
+        {
+          "title": "Meta Information",
+          "tasks": [
+            {
+              "priority": "high",
+              "explications": "Each page should have a unique description (max. 160 characters)",
+              "code":"<meta name=\"description\" content=\"\">",
+              "title":"Unique description for each page"
+            },
+            {
+              "priority": "high",
+              "explications": "Each page should have a unique speaking title (60 - 100 characters)",
+              "code":"<title>Website Title</title>",
+              "title":"Unique speaking title for each page"
+            }
+          ]
+        },
+        {
+          "title": "Keywords",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "Keyword should appear in ~3% of article length",
+              "title":"Keyword appear ~3%"
+            },
+            {
+              "priority": "medium",
+              "explications": "Keyword should appear in headings",
+              "title":"Keyword in headings"
+            },
+            {
+              "priority": "medium",
+              "explications": "You can ommit the <meta name=\"keywords\" content=\"\">,\nsearch engines do not use this meta tag",
+              "title":"You can ommit the Meta name=\"keywords\""
+            },
+            {
+              "priority": "medium",
+              "explications": "Rank for keywords with high traffic and less competition",
+              "title":"Keywords rank"
+            },
+            {
+              "priority": "medium",
+              "explications": "Every page should have a single unique targeted keyword",
+              "title":"Unique keyword target for each page"
+            },
+            {
+              "priority": "medium",
+              "explications": "Keyword should appear in page title",
+              "title":"Keyword in page title"
+            },
+            {
+              "priority": "medium",
+              "explications": "Keyword should appear in URL name",
+              "title":"Keywork in URL name"
+            }
+          ]
+        },
+        {
+          "title": "Content",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "Content matters the most in SEO",
+              "title":"Good content"
+            },
+            {
+              "priority": "medium",
+              "explications": "Avoid Flash content and Flash pages. They are not accessible on mobile phones and will be ranked lower",
+              "title":"No Flash"
+            },
+            {
+              "priority": "medium",
+              "explications": "New content is important. Updating pages or posting regularly is recommended",
+              "title":"Update pages content regulary"
+            },
+            {
+              "priority": "medium",
+              "explications": "Clear structure H1 - H6 max. 70 characters long",
+              "title":"Structure H1 - H6"
+            },
+            {
+              "priority": "medium",
+              "explications": "Article should be at least 300 words",
+              "title":"300 words article"
+            },
+            {
+              "priority": "medium",
+              "explications": "Use strong tag to highlight your targeted keyword",
+              "title":"Strong targeted keyword"
+            },
+            {
+              "priority": "medium",
+              "explications": "Do not provide duplicated content, use unique content types",
+              "title":"No duplicate content"
+            }
+          ]
+        },
+        {
+          "title": "Images",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "Add an alt-tag this a description of the image (60 - 70 characters)",
+              "title":"Image alt-tag"
+            },
+            {
+              "priority": "medium",
+              "explications": "Add the width=\"\" and height=\"\" attributes to the image",
+              "title":"Image width and height"
+            },
+            {
+              "priority": "medium",
+              "explications": "Use a short descriptive name",
+              "title":"Short descriptive name"
+            },
+            {
+              "priority": "medium",
+              "explications": "Optimize images by removing some meta information",
+              "title":"Optimise image (file size)"
+            },
+            {
+              "priority": "medium",
+              "explications": "Serve the most optimized image corresponding to the window size",
+              "title":"Optimized image size"
+            },
+            {
+              "priority": "medium",
+              "explications": "Keep the filesize as low as possible",
+              "title":"Low size"
+            }
+          ]
+        },
+        {
+          "title": "Videos",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "Add controls to playback and control your video",
+              "title":"Video controls"
+            },
+            {
+              "priority": "medium",
+              "explications": "Allow others to embed your videos",
+              "title":"Allow embed videos"
+            },
+            {
+              "priority": "medium",
+              "explications": "Use transcriptions for indexing, usability & content",
+              "title":"Video transcriptions"
+            },
+            {
+              "priority": "medium",
+              "explications": "Avoid unplayable video content. Use HTML5 <video> tag instead of Flash",
+              "title":"No unplayable video"
+            }
+          ]
+        },
+        {
+          "title": "Links",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "Only add external links if you got a backlink to your site",
+              "title":"External links = backlink"
+            },
+            {
+              "priority": "medium",
+              "explications": "Add ~3 internal links to your content",
+              "title":"~3 internal links"
+            },
+            {
+              "priority": "medium",
+              "explications": "The hreflang tag tells Google which language you are using on a specific page, so the search engine can serve that result to users searching in that language",
+              "title":"hreflang tag",
+              "code":"<link rel=\"alternate\" href=\"example.com/fr/\" hreflang=\"fr-fr\" />"
+            },
+            {
+              "priority": "medium",
+              "explications": "Use a descriptive link name: “Click here” or “Read more” are bad link text. Better “Read more about SEO and Web Accessibility”",
+              "title":"Use a descriptive link name"
+            },
+            {
+              "priority": "medium",
+              "explications": "Add rel=\"nofollow\" attribute to external links only to prevent spam and bad links",
+              "title":"rel=\"nofollow\""
+            },
+            {
+              "priority": "medium",
+              "explications": "Add the title attribute to links",
+              "title":"Link title attribute"
+            }
+          ]
+        },
+        {
+          "title": "Mobile",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "Apps that link to your content can then use this metadata to deep-link into your app",
+              "title":"Link metadata"
+            },
+            {
+              "priority": "medium",
+              "explications": "Mobile optimized sites are marked in search results. Test for ",
+              "links": [
+                {
+                  "path": "https://www.google.com/webmasters/tools/mobile-friendly/",
+                  "text": "Mobile friendly site",
+                  "type": "link"
+                }
+              ]
+            },
+            {
+              "priority": "medium",
+              "explications": "Safari has a Smart App Banner feature that provides a standardized method of promoting apps on the App Store from a website",
+              "title":"Smart App Banner"
+            },
+            {
+              "priority": "medium",
+              "explications": "Clickable links should not be too small",
+              "title":"No small links"
+            },
+            {
+              "priority": "medium",
+              "explications": "Tell browsers how to adjust the page's dimensions and scaling to suit the device",
+              "code":"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+              "title":"Responsive design"
+            }
+          ]
+        },
+        {
+          "title": "Sitemap",
+          "tasks": [
+            {
+              "priority": "medium",
+              "explications": "An HTML sitemap allows site visitors to easily navigate a website",
+              "title":"Sitemap.xml"
+            },
+            {
+              "priority": "medium",
+              "explications": "Increase that your images can be found in Image Search results",
+              "title":"Image in Image Search results"
+            },
+            {
+              "priority": "medium",
+              "explications": "For feature phones, you can create a mobile sitemap",
+              "title":"Sitemap.xml for Mobile"
+            },
+            {
+              "priority": "medium",
+              "explications": "Make sure, search engines know about all the video content on your site",
+              "title":"Videos in search engines"
+            },
+            {
+              "priority": "medium",
+              "explications": "Help search engines to index your pages",
+              "title":"Index you page in search engines"
+            }
+          ]
+        },
+        {
+          "title": "Social Media",
+          "tasks": [
+            {
+              "priority": "medium",
+              "title": "Authorship information"
+            },
+            {
+              "priority": "medium",
+              "explications": "Add Google+ authorship information to your page",
+              "code":"<link rel=\"author\" href=\"https://plus.google.com/u/0/[GOOGLE+ ID]\"> or\n<a href=\"https://plus.google.com/u/0/[GOOGLE+ ID]\" rel=author\">Google+ Profile</a> or\n<a href=\"https://plus.google.com/u/0/[GOOGLE+ ID]\" rel=me\">Google+ Profile</a> or\n<a href=\"https://plus.google.com/u/0/[GOOGLE+ ID]\" rel=publisher\">Google+ Profile</a>",
+              "title":"Google+ authorship"
+            },
+            {
+              "priority": "medium",
+              "explications": "The Open Graph protocol enables any web page to become a rich object in a social graph.",
+              "title":"Open Graph protocol"
+            },
+            {
+              "priority": "medium",
+              "explications": "Add social profiles to your Google search results",
+              "title":"Social profiles"
+            },
+            {
+              "priority": "medium",
+              "explications": "Provide sharing options for your site",
+              "title":"Sharing buttons"
+            },
+            {
+              "priority": "medium",
+              "explications": "With Twitter cards, you can attach photos, videos and media experience to you Tweets",
+              "title":"Twitter card"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+$body-background: #ddd;
+
+$blue:                rgba(0,0,255,1);
+$green:               rgba(0,255,0,1);
+$yellow:              #F0CA4D;
+$orange:              rgba(227,123,64,1);
+$red:                 rgba(255,0,0,1);
+$grey:                rgba(0,0,0,.5);
+
+$bg-medium:           rgba(89,98,107,1);
+$col-medium:          rgba(255,255,255,1);
+
+$dark-bg:             rgba(89,98,107,1);
+$outline-dark:        rgba(0,0,0,.25);
+$dark-content:        rgba(255,255,255,1);
+
+$light-bg:            rgba(255,255,255,1);
+$light-content:       rgba(89,98,107,1);
+
+$card-bg:             rgba(255,255,255,0.9);
+
+$card-header-bg:      rgba(52,58,64,.5);
+$card-header-content: rgba(255,255,255,.9);
+
+$header-bg-color:       $grey;
+$header-bg-input:     rgba(0,0,0,0.9);
+
+$footer-size: 60px;
+
+body,html {
+  width: 100%;
+  height: 100%;
+  // background-color: #eee;
+  line-height: 1.15;
+}
+
+body {
+  padding-top: 3rem;
+  // background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/wp-dark-hi-2880x1800.png) no-repeat fixed rgba(0, 0, 0, 0.4);
+  // background-position: center center;
+  // background-size: cover;
+  // background: url(../img/1000px-WordPress_logo.svg.png) no-repeat fixed;
+  // background-position: center center;
+  // background: $body-background;
+}
+
+body:after {
+  content: "";
+  opacity: 0.5;
+  background: url(../img/1000px-WordPress_logo.svg.png) no-repeat fixed #bbb;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;   
+}
+
+#app {
+  min-height: 100%;
+  padding-bottom: 2*$footer-size;
+}
+
+.hide-on-mobile{
+  @media (max-width: 40.0rem) {
+    display: none;
+  }
+}
+// .show-on-mobile{
+//   @media (max-width: 40.0rem) {
+//     max-width: 100% !important;
+//   }
+// }
+header {
+  background-color: $bg-medium;
+  color: $col-medium;
+  .checklist-name {
+    text-align: center;
+    padding: 1rem;
+  }
+  .form-control {
+    background-color: $dark-bg !important;
+    color: $dark-content !important;
+    &::placeholder {
+      color: $header-bg-input;
+    }
+  }
+  .button {
+    margin-right: 1rem;
+    i.fa {
+      margin-right: 10px;
+    }
+  }
+
+  // .toolbar {
+  //   div.button-toolbar {
+  //     // padding-top: 24px;
+  //   }
+  // }
+
+  .status {
+    i.fa {
+      margin-right: 10px;
+    }
+    i.high {
+      color: $red;
+    }
+    i.medium {
+      color: $orange;
+    }
+    i.low {
+      color: $green;
+    }
+  }
+
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.categories {
+  width: 90%;
+  margin: auto;
+
+  h2 {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    
+    &.group-title {
+      color: $header-bg-input;
+      border-bottom: solid 1px $header-bg-input;
+      & .go-top {
+        text-transform: none;
+        // vertical-align: baseline;
+        transition: all 0.2s ease;
+        line-height: 3.4;
+        text-decoration: none;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .category-title {
+    color: $light-content;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: solid 1px $light-content;
+  }
+
+  .task {
+    p {
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    i.fa {
+      cursor: pointer;
+    }
+    .taskHeader {
+      i.fa {
+        margin-right: .5rem;
+      }
+    }
+
+    i.not-checked {
+      padding-right: 2.84px
+    }
+
+    i.checked {
+      color: $green;
+      text-decoration: none;
+      &.high {
+        color: $red;
+      }
+      &.medium {
+        color: $orange;
+      }
+      &.low {
+        color: $green;
+      }
+    }
+    i.not-checked {
+      color: $grey;
+      // opacity: 0.5;
+      &.high {
+        color: $red;
+      }
+      &.medium {
+        color: $orange;
+      }
+      &.low {
+        color: $green;
+      }
+    }
+    span.checked {
+      text-decoration: line-through;
+    }
+  }
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footer-size;
+  margin-top: -$footer-size;
+  text-align: center;
+  background-color: $grey;
+  p {
+    margin: 0;
+    height: $footer-size;
+    line-height: $footer-size;
+    color: $blue;
+  }
+  .heart {
+    color: $red;
+  }
+
+}
+
+.for-print {
+  display: none !important;
+}
+
+.taskHeader {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.foldIcon {
+  margin: -.75rem -1rem -.75rem 0;
+  width: 3rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  i {
+    display: block;
+  }
+}

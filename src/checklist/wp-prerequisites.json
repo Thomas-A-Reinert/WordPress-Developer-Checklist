@@ -1,0 +1,72 @@
+{
+  "name": "WordPress Installation",
+  "description": "Placeholder Checklist description",
+  "summary": "Placeholder Checklist summary",
+  "group_categories": [
+    {
+      "title_group": "WordPress Prerequisites",
+      "categories": [
+        {
+          "title": "WordPress installation requirements",
+          "tasks": [
+            {
+              "title": "Minimum hosting requirements",
+              "explications":"Make sure your hosting plan at least support the following setup. But you should make sure you fulfill the recommended setup. Note: Administrative tasks may consume much more memory!",
+              "explicationlist": [
+                {"explicationitem": "PHP 5.2.4 or greater"},
+                {"explicationitem": "MySQL 5.0 or greater"},
+                {"explicationitem": "Nginx or Apache with mod_rewrite module"},
+                {"explicationitem": "Minimum 40MB memory allocated to PHP for a single sites (at least 64MB for multisite)"},
+                {"explicationitem": "At least 60s PHP max execution time"},
+                {"explicationitem": "HTTPS support"}
+              ],
+              "links": [
+                {"path":"https://wordpress.org/about/requirements/",
+                  "text":"WordPress.org - \"Requirements\"",
+                  "type": "link"},
+                {"path":"https://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP",
+                  "text":"WordPress.org - \"Increasing memory allocated to PHP\"",
+                  "type": "link"}
+              ],
+              "code":"",
+              "priority": "high"
+            },
+            {
+              "title": "Recommended hosting requirements",
+              "explications":"Depending on your setup (theme / used plugins) you may consider the recommended setup.",
+              "explicationlist": [
+                {"explicationitem": "PHP 7.2 or greater"},
+                {"explicationitem": "MySQL 5.6 or greater OR MariaDB 10.0 or greater"},
+                {"explicationitem": "Nginx or Apache with mod_rewrite module"},
+                {"explicationitem": "64MB memory allocated to PHP for a single sites (128MB for multisite)"},
+                {"explicationitem": "120s PHP max execution time for very complex sites and/or backend operations"},
+                {"explicationitem": "HTTPS support"}
+              ],
+              "priority": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "HTML",
+      "categories": [
+        {
+          "title": "Best practices",
+          "tasks": [
+            {
+              "title": "HTML5 Semantic Elements",
+              "links": [
+                {"path":"http://htmlreference.io/",
+                  "text":"HTML Reference",
+                  "type": "link"}
+              ],
+              "explications":"HTML5 Semantic Elements are used appropriately (header, section, footer, main...).",
+              "priority": "high"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

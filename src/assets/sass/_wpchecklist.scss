@@ -1,0 +1,41 @@
+.card {
+  border-color: $card-header-bg !important;
+  border-radius: 0 !important;
+  background: $card-bg;
+
+  .card-header {
+    padding: .75rem 1rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    height: 100%;
+  }
+  
+  .card-body {
+    padding: 1rem 3rem 1rem 1rem !important;
+    
+    // .card-text {
+    //   padding: 1rem 3rem 1rem 1rem;
+    // }
+  }
+}
+
+/*!
+ * not working after this - for whatever reason
+*/
+
+// .taglist {
+//   border-top: 1px solid black;
+// }
+
+.tags {
+  // border-radius: 5px;
+  // border: 1px solid $outline-dark;
+  // background: $dark-bg;
+  font-size: 80%;
+}
+
+body {
+    background: green !important;
+}
