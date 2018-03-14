@@ -12,13 +12,13 @@ script:
 notifications:
   email:
     recipients:
-      - thomas@tarcgn.de
+      - symbian60.mobi@gmail.com
 branches:
   only:
     - master
-deploy:
-  local_dir: dist
-  provider: pages
-  skip_cleanup: true
-  on:
-    branch: master
+# deploy:
+#   local_dir: dist
+#   provider: pages
+#   skip_cleanup: true
+#   on:
+#     branch: master
