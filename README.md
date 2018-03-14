@@ -20,7 +20,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
 
 **Project completion**
-[![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-90%25-green.svg)]()
+
+[![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-80%25-yellowgreen.svg)]()
+[![Development](https://img.shields.io/badge/Development-0%25-%23f00.svg)]()
+[![Security](https://img.shields.io/badge/Security-0%25-%23f00.svg)]()
+[![Performance](https://img.shields.io/badge/Performance-0%25-%23f00.svg)]()
+[![Theme-Development](https://img.shields.io/badge/Theme-evelopment-0%25-%23f00.svg)]()
+[![Plugin-Development](https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg)]()
 
 
 
