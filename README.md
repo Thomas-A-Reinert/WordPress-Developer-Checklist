@@ -12,15 +12,15 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?branch=master)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/tree/master)
 
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/latest.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
-
-
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/latest.svg?style=flat-square&?branch=master)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist//tree/master)
 
 
 
-[![GitHub commits](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/1.0.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
+
+
+[![GitHub commits](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/1.0.svg?branch=master)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist//tree/master)
 
 
 
