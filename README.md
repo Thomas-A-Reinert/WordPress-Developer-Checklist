@@ -11,6 +11,10 @@
 
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![Front‑End_Checklist followed](https://img.shields.io/badge/WordPress-Developer-Checklist-followed-brightgreen.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
 
 
 **All the power of checklists, without the overhead:**
