@@ -20,8 +20,8 @@
 
 
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
-[![GitHub watchers](https://img.shields.io/github/watchers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers/)
-[![GitHub followers](https://img.shields.io/github/followers/Thomas-A-Reinert.svg?style=social&label=Follow&maxAge=2592000)](https://github.comThomas-A-Reinert?tab=followers)
+[![GitHub watchers](https://img.shields.io/github/watchers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&label=Watch&maxAge=2592000)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers/)
+[![GitHub followers](https://img.shields.io/github/followers/Thomas-A-Reinert.svg?style=flat-square&label=Follow&maxAge=2592000)](https://github.comThomas-A-Reinert?tab=followers)
 [![GitHub contributors](https://img.shields.io/github/contributors/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/graphs/contributors/)
 
 
