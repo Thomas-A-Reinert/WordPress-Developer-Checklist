@@ -293,7 +293,7 @@
               "priority": "low"
             },
             {
-              "title": "Settings -> Discussion",
+              "title": "Settings → Discussion",
               "explications":"tbd",
               "links": [
                 {"path":"https://codex.wordpress.org/Settings_Discussion_Screen",
