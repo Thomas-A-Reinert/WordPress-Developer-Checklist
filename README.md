@@ -1,13 +1,13 @@
 <h2 align="center"><a href="https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist">WordPress-Developer-Checklist</a></h2>
 
-<!-- <p align="center">
+<p align="center">
   <em>A user-friendly and fluid interface for using checklists.</em>
-</p> -->
-<!-- <p align="center">
-    <a href="https://alexisdanizan.github.io" target="_blank" rel="noopener noreferrer">
-        <img alt="Checklist tools website" title="Checklist tools website" src="https://github.com/AlexisDanizan/Checklist-Tools-Website/blob/master/data/checklist-tools.gif?raw=true" width="800">
+</p>
+<p align="center">
+    <a href="https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist" target="_blank" rel="noopener noreferrer">
+        <img alt=">WordPress-Developer-Checklist" title=">WordPress-Developer-Checklist" src="dist/img/WordPress-Developer-Checklist-Animation.apng" width="800">
     </a>
-</p> -->
+</p>
 
 **Repository Status**
 
@@ -37,13 +37,6 @@
 [![Plugin-Development](https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg?style=flat-square)]()
 
 
-
-**All Content Is Distributed As**
-
-[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
-
-
-
 **All the power of checklists, without the overhead:**
  - User-friendly and fluid interface
  - Fast build with [Preact](https://github.com/developit/preact) and [Bootstrap4](https://github.com/twbs)
@@ -52,7 +45,6 @@
  - Auto-save your progress
  - **Instant no-config app bundling**
 
-Code based on the [Front-End Checklist by Alexis Danizan](https://github.com/AlexisDanizan/Checklist-Tools-Website)
 
 **Use the online version:**
 [wpchecklist.tarthemes.com/](https://wpchecklist.tarthemes.com)
@@ -102,7 +94,7 @@ The version is available at [http://localhost:8080](http://localhost:8080)
 #### Use the auto-converter
 
 To convert a checklist to markdown format you can use the `bin/mdChecklistToJson.js` script.
-To do this, add your checklist in `sample.md` and run the command **`npm mdtojson`**.  
+To do this, add your checklist in `sample.md` and run the command **`npm mdtojson`**.
 The result of the conversion is in **`bin/sample.json`**. Modify your checklist until you get the result.
 
 #### Add manually
@@ -151,7 +143,7 @@ Sample template:
 }
 ```
 
-To make the checklist available in app you need to modify `./src/stores/checklistStore.js` 
+To make the checklist available in app you need to modify `./src/stores/checklistStore.js`
 and add `import example from '../checklist/example.json';`.
 
 Next add it in INITIAL_DATA in `./src/stores/checklistStore.js`:
@@ -169,7 +161,7 @@ const INITIAL_DATA = {
 The new checklist does not appear in select:
  - Empty the localStorage before add a new checklist.
  - Try the Chrome extension ["Clear Session"](https://chrome.google.com/webstore/detail/clear-session/maejjihldgmkjlfmgpgoebepjchengka) to clear the localStorage for the current window
- 
+
 ## Contributing
 
 **Open an issue or a pull request to suggest changes or additions.**
@@ -191,7 +183,7 @@ This branch will be used to make some significant changes to the structure, cont
 ## Author
 
 **[Thomas A. Reinert](https://github.com/Thomas-A-Reinert/)**
-<!-- 
+<!--
 ## Contributors
 
 This project exists thanks to all the people who contribute. -->
@@ -199,3 +191,10 @@ This project exists thanks to all the people who contribute. -->
 ## License
 
 Designed and created with ♥ by [Thomas A. Reinert](https://www.tarcgn.de/portfolio/). Licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+
+## Credits
+This project wouldn´t exist without the selfless work of the following persons / projects:
+- Code based on the [Front-End Checklist](https://github.com/AlexisDanizan/Checklist-Tools-Website) by [Alexis Danizan](https://github.com/AlexisDanizan/)
+- [Brian A. Danielak](https://gist.github.com/briandk) for his [CONTRIBUTING.md Template](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62)
+- The people from [Twitter](https://github.com/twitter) for their [Code-of-Conduct](https://github.com/twitter/code-of-conduct),<br>
+Attribution: "@TwitterOSS Code of Conduct" © 2013 Twitter, Inc, used under a Creative Commons Attribution Unported license: http://creativecommons.org/licenses/by/3.0/
