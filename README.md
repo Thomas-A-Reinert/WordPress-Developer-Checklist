@@ -10,8 +10,8 @@
 </p> -->
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-red.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub release](https://img.shields.io/github/Release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
-[![GitHub commits](https://img.shields.io/github/Commits-since/Thomas-A-Reinert/WordPress-Developer-Checklist/1.0.0.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commit/)
+[![GitHub release](https://img.shields.io/github/release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
+[![GitHub commits](https://img.shields.io/github/commits-since/Thomas-A-Reinert/WordPress-Developer-Checklist/1.0.0.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commit/)
 [![Last deployed](https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed&style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
 [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master&style=flat-square)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
