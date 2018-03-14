@@ -14,10 +14,9 @@
 [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
 [![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/latest.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/latest.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
 
 
-[![Github commits (since latest release)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
 
 
