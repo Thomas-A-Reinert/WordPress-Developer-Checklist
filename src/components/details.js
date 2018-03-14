@@ -34,7 +34,7 @@ const Details = ({ project_name, team, url }, { mutate }) => {
             placeholder="https://"
             className="form-control" 
             id="urlField"
-            type="url"
+            type="text"
             value={url}
             onChange={e => mutate(URL_CHANGE, e.target.value)}
           />

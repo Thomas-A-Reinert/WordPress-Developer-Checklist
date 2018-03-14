@@ -1,0 +1,40 @@
+{
+  "name": "WordPress Development",
+  "description": "",
+  "summary": "",
+  "group_categories": [
+    {
+      "title_group": "To be done",
+      "categories": [
+        {
+          "title": "To be done",
+          "tasks": [
+            {
+              "title": "Activate Debugging Output and Logging",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""}
+              ],
+              "links": [
+                {"path":"",
+                  "text":"",
+                  "type": ""},
+                {"path":"",
+                  "text":"",
+                  "type": ""}
+              ],
+              "code":"define( 'WP_DEBUG', true ); // Or false<br>if ( WP_DEBUG ) {<br>  @ini_set( 'log_errors', 'On' );<br>  @ini_set( 'display_errors', 'On' );<br>  @ini_set('error_log',dirname(__FILE__) . '/wp-content/logs/error.log');<br>}",
+              "priority": "high"
+            }
+            
+          ]
+        }
+      ]
+    }
+  ]
+}

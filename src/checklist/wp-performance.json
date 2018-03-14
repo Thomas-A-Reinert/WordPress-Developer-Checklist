@@ -1,0 +1,40 @@
+{
+  "name": "WordPress Performance",
+  "description": "",
+  "summary": "",
+  "group_categories": [
+    {
+      "title_group": "To be done",
+      "categories": [
+        {
+          "title": "To be done",
+          "tasks": [
+            {
+              "title": "",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""},
+                {"explicationitem": ""}
+              ],
+              "links": [
+                {"path":"",
+                  "text":"",
+                  "type": ""},
+                {"path":"",
+                  "text":"",
+                  "type": ""}
+              ],
+              "code":"",
+              "priority": "high"
+            }
+            
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,7 @@
-// import front_end from '../checklist/front-end.json';
-// import api_security from '../checklist/api-security.json';
-// import seo from '../checklist/seo.json';
-// import side_project_marketing from '../checklist/side-project-marketing';
-
-import wp_prerequisites from '../checklist/wp-prerequisites.json';
+import wp_prerequisites from '../checklist/wp-prerequisites-installation-postinstall.json';
+import wp_development from '../checklist/wp-development.json';
+import wp_security from '../checklist/wp-security.json';
+import wp_performance from '../checklist/wp-performance.json';
 
 import {load} from "./manage";
 import {countStatus,AddGenerateId} from "../utils";
@@ -11,10 +9,9 @@ import {countStatus,AddGenerateId} from "../utils";
 const INITIAL_DATA = {
   checklists: [
     wp_prerequisites,
-    // front_end,
-    // api_security,
-    // seo,
-    // side_project_marketing,
+    wp_security,
+    wp_performance,
+    wp_development
   ],
   done: {
     high:{
@@ -32,7 +29,8 @@ const INITIAL_DATA = {
   },
   selected: 0,
   project_name: "",
-  team:""
+  team:"",
+  url:""
 };
 
 

@@ -1,0 +1,458 @@
+{
+  "name": "Prerequisites, Installation & Post-Install",
+  "description": "This checklist describes the WordPress installation prerequisites and installation process as well as post-install tasks.",
+  "summary": "",
+  "group_categories": [
+    {
+      "title_group": "WordPress Prerequisites",
+      "categories": [
+        {
+          "title": "WordPress installation requirements",
+          "tasks": [
+            {
+              "title": "Minimum hosting requirements",
+              "explications":"Make sure your hosting plan at least supports the following setup. But you should make sure you fulfill the recommended setup. Note: Administrative tasks may consume much more memory!",
+              "explicationlist": [
+                {"explicationitem": "PHP 5.2.4 or greater"},
+                {"explicationitem": "MySQL 5.0 or greater"},
+                {"explicationitem": "Nginx or Apache with mod_rewrite module"},
+                {"explicationitem": "Minimum 40MB memory allocated to PHP for a single sites (at least 64MB for multisite)"},
+                {"explicationitem": "At least 60s PHP max execution time"},
+                {"explicationitem": "HTTPS support"}
+              ],
+              "links": [
+                {"path":"https://wordpress.org/about/requirements/",
+                  "text":"WordPress.org - \"Requirements\"",
+                  "type": "codex"},
+                {"path":"https://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP",
+                  "text":"WordPress.org - \"Increasing memory allocated to PHP\"",
+                  "type": "codex"}
+              ],
+              "code":"",
+              "priority": "high"
+            },
+            {
+              "title": "Recommended hosting requirements",
+              "explications":"Depending on your setup (theme / used plugins) you may consider the recommended setup.",
+              "explicationlist": [
+                {"explicationitem": "PHP 7.2 or greater"},
+                {"explicationitem": "MySQL 5.6 or greater OR MariaDB 10.0 or greater"},
+                {"explicationitem": "Nginx or Apache with mod_rewrite module"},
+                {"explicationitem": "64MB memory allocated to PHP for a single sites (128MB for multisite)"},
+                {"explicationitem": "120s PHP max execution time for very complex sites and/or backend operations"},
+                {"explicationitem": "HTTPS support"}
+              ],
+              "tags": [
+                {"label":"Recommended"}
+              ],
+              "priority": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "Wordpress Pre-Installation",
+      "categories": [
+        {
+          "title": "Set up the hosting environment",
+          "tasks": [
+            {
+              "title": "SSL certificate",
+              "explications":"It is recommended to install and run WordPress using HTTPS. So it would be best to set up a SSL certificate before setting up WordPress, because WordPress uses absolute paths that will be stored within the database. Fixing those after installation is simply not neccessary and can become confusing.",
+              "links": [
+                {"path":"https://codex.wordpress.org/Function_Reference/get_home_path",
+                  "text":"WordPress.org - \"Function Reference/get home path\"",
+                  "type": "codex"}
+              ],
+              "tags": [
+                {"label":"Security"}
+              ],
+              "priority": "high"
+            },
+            {
+              "title": "Hosting-Environment",
+              "explications":"Set up your host from which you´ll want to serve your WordPress installation. Make sure that it will serve your installation via HTTPS by setting up a 301-directive.",
+              "priority": "high"
+            },
+            {
+              "title": "Database",
+              "explications":"Set up your database and make sure to give it a non-guessable name for security reasons. It should not exactly match the hosts/domains name.",
+              "tags": [
+                {"label":"Security"}
+              ],
+              "priority": "high"
+            },
+            {
+              "title": "Download WordPress",
+              "explications":"Make sure to download WordPress from a reliable source - WordPress.org. There are alternatives available like WProller that allow you to download a customized installation with preconfigured themes and plugins, but those may not always included the latest versions. However you can/should update those after completing the installation.",
+              "links": [
+                {"path":"https://wordpress.org/download/",
+                  "text":"Download WordPress from WordPress.org",
+                  "type": "codex"},
+                {"path":"http://wproller.com/",
+                  "text":"Download a customized WordPress from WProller.com",
+                  "type": "link"}
+              ],
+              "tags": [
+                {"label":"Recommended"}
+              ],
+              "priority": "high"
+            },
+            {
+              "title": "Transfer files via FTP",
+              "explications":"Unpackage the download to your local computer and upload the content of the \"wordpress\" folder to your host via FTP, NOT the \"wordpress\" folder itself - otherwise you´ll need to access it via \"www.examplehost.com/wordpress\" later !",
+              "links": [
+                {"path":"https://wordpress.org/download/",
+                  "text":"Filezilla - Free and recommended FTP-Software",
+                  "type": "link"},
+                {"path":"https://codex.wordpress.org/FTP_Clients",
+                  "text":"WordPress.org - \"FTP clients\"",
+                  "type": "codex"}
+              ],
+              "priority": "high"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "Wordpress Installation",
+      "categories": [
+        {
+          "title": "Manual installation",
+          "tasks": [
+            {
+              "title": "Manually edit \"wp-config.php\"",
+              "explications":"You can install WordPress manually or wizard-driven (\"Famous 5-Minute Installation\"). If you plan to go for the manual installation please check the link below.",
+              "links": [
+                {"path":"https://codex.wordpress.org/Editing_wp-config.php",
+                  "text":"WordPress.org - \"Editing wp-config.php\"",
+                  "type": "codex"}
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Guided installation",
+          "tasks": [
+            {
+              "title": "\"Famous 5-Minute Installation\"",
+              "explications":"WordPress has a guided installation procedure integrated. After uploading all files via FTP to your host, just request the installation directory via your browser. E.g.: \"www.examplehost.com/\" and the wizard will appear, asking for some information you should have at hand already if you went through above mentioned steps. These are:",
+              "explicationlist": [
+                {"explicationitem": "The websites <strong>primary language</strong> - can be changed later via the admin-interface"},
+                {"explicationitem": "<strong>Database name</strong>"},
+                {"explicationitem": "<strong>Database username</strong>"},
+                {"explicationitem": "<strong>Database password</strong>"},
+                {"explicationitem": "<strong>Database host</strong>"},
+                {"explicationitem": "<strong>Table prefix</strong> - should be changed to any other string than the default \"wp_\" without any special characters."},
+                {"explicationitem": "<strong>Site title</strong> - can be changed later via the admin-interface."},
+                {"explicationitem": "<strong>Administrator username</strong> / Login name - can NOT be changed later via the admin-interface."},
+                {"explicationitem": "<strong>Administrator password</strong> - can be changed later via the admin-interface, please see below on how to generate secure passwords."},
+                {"explicationitem": "<strong>Administrator Email</strong> address - can be changed later via the admin-interface."},
+                {"explicationitem": "<strong>Search Engine Visibility</strong> - can be changed later via the admin-interface. Consider to discourage search engines from indexing this site for development and staging environments. You can always change that when you plan to go live."}
+              ],
+              "links": [
+                {"path":"https://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Installation",
+                  "text":"WordPress.org - \"Editing wp-config.php\"",
+                  "type": "codex"},
+                {"path":"https://xkpasswd.net/s/",
+                  "text":"XKPasswd - Secure Memorable Passwords",
+                  "type": "link"}
+              ],
+              "tags": [
+                {"label":"Recommended"}
+              ],
+              "priority": "high"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "Wordpress Post-Install",
+      "categories": [
+        {
+          "title": "Adjust Settings",
+          "tasks": [
+            {
+              "title": "Settings → General",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": "<strong>Site Title</strong> - The site title that will be used e.g. in tabs, bookmarks, SERPs etc. may be displayed by a theme."},
+                {"explicationitem": "<strong>Tagline</strong> - may be displayed by a theme."},
+                {"explicationitem": "<strong>WordPress Address (URL)</strong> - leave untouched unless you know what you are doing."},
+                {"explicationitem": "<strong>Site Address (URL)</strong> - leave untouched unless you know what you are doing."},
+                {"explicationitem": "<strong>Email Address</strong> - the mail address where admin notes will be sent to by default."},
+                {"explicationitem": "<strong>Membership</strong> - allow/deny registration by users. If denied only admins can register new users."},
+                {"explicationitem": "<strong>New User Default Role</strong> - it is strongly recommended to keep \"Subscriber\" as the default user role, especially when you allow any user to subscribe."},
+                {"explicationitem": "<strong>Site Language</strong> - Default language for backend and frontend (if supported by your theme). Every user can choose his own language to displayed in backend and frontend through his profile."},
+                {"explicationitem": "<strong>Timezone</strong> - Timezone in which your site is located. Will - among other things - be used for scheduled posts.<br>The current set time will be displayed under the dropdown so you can easily estimate the UTC offset."},
+                {"explicationitem": "<strong>Date Format</strong> - Date format that will be used for display in articles etc. Can be set to any format that is supported by the PHP date() function. Denominations for days and months will be automatically translated in the above set language."},
+                {"explicationitem": "<strong>Time Format</strong> If you want to display characters you´ll need to escape them.<br>Example: <code>g:i \\U\\h\\r</code> will get displayed as \"00:00 Uhr\"."},
+                {"explicationitem": "<strong>Week Starts On</strong> - This will almost never be used in a default installation. Only exception: The built-in calendar widget."}
+              ],
+              "links": [
+                {"path":"https://codex.wordpress.org/Settings_General_SubPanel",
+                  "text":"WordPress.org - \"Settings General Screen\"",
+                  "type": "codex"},
+                {"path":"https://codex.wordpress.org/Formatting_Date_and_Time",
+                  "text":"WordPress.org - \"Formatting Date and Time\"",
+                  "type": "codex"},
+                {"path":"http://php.net/manual/de/function.date.php",
+                    "text":"PHP.net - date() function",
+                    "type": "link"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"}
+              ],
+              "priority": "medium"
+            },
+            {
+              "title": "Settings → Writing",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": "<strong>Default Post Category</strong> - needs post categories to be set up beforehand."},
+                {"explicationitem": "<strong>Default Post Format</strong> - Make sure that your theme supports the default post format."},
+                {"explicationitem": "<strong>Mail Server</strong> - You may choose to send mail to a postbox that will be regularly queried by WordPress´ pseudo-cron. Anyway, formatting is limited and this may also become a security problem. So - not recommended."},
+                {"explicationitem": "<strong>Login Name</strong> - Login for the mail account."},
+                {"explicationitem": "<strong>Password</strong> - Password for the mail account."},
+                {"explicationitem": "<strong>Default Mail Category</strong> - Category to which mails should be posted by default. Needs post categories to be set up beforehand."},
+                {"explicationitem": "<strong>Update Services</strong> - Services to be automatically informed when you post new content. May boost your reach dramatically. See link below for a good head start."}
+              ],
+              "links": [
+                {"path":"https://codex.wordpress.org/Settings_Writing_Screen",
+                  "text":"WordPress.org - \"Settings Writing Screen\"",
+                  "type": "codex"},
+                {"path":"https://www.sourcewp.com/wordpress-ping-list/",
+                  "text":"Sourcewp - \"Updated WordPress Ping List for 2018\"",
+                  "type": "link"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"}
+              ],
+              "priority": "low"
+            },
+            {
+              "title": "Settings → Reading",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": "<strong>Your homepage displays</strong> - WordPress homepage shows the latest posts by default. You may choose to display a different page but should remember to also set an overview page for the posts then."},
+                {"explicationitem": "<strong>Blog pages show at most</strong> - Any number allowed. Not really recommended to show more than 10 posts with images to keep the overview page small and performant."},
+                {"explicationitem": "<strong>Syndication feeds show the most recent</strong> - How many posts should be shown in RSS/RDF newsfeeds that will automatically be generated from your blog posts."},
+                {"explicationitem": "<strong>For each article in a feed, show</strong> - Recommendations for this setting is beyond the scope of this checklist. Depending on your theme the output may also not meet your expectations and settings."},
+                {"explicationitem": "<strong>Search Engine Visibility</strong> - Remember to discourage Search Engines from indexing on a development or staging site and to encourage them on a live site. It´s a good idea to also prevent Search Engines and visitors as well from viewing site content of a development site. Use a Plugin like \"Coming Soon Page & Maintenance Mode by SeedProd\" for this purpose."}
+              ],
+              "links": [
+                {"path":"https://codex.wordpress.org/Settings_Reading_Screen",
+                  "text":"WordPress.org - \"Settings Reading Screen\"",
+                  "type": "codex"},
+                {"path":"https://wordpress.org/plugins/coming-soon/",
+                  "text":"Plugin - Coming Soon Page & Maintenance Mode by SeedProd",
+                  "type": "plugin"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"}
+              ],
+              "priority": "low"
+            },
+            {
+              "title": "Settings -> Discussion",
+              "explications":"tbd",
+              "links": [
+                {"path":"https://codex.wordpress.org/Settings_Discussion_Screen",
+                  "text":"WordPress.org - \"Settings Discussion Screen\"",
+                  "type": "codex"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"}
+              ],
+              "priority": "medium"
+            },
+            {
+              "title": "Settings → Media",
+              "explications":"The Settings Media Screen controls the various settings related to images and other media that are used in writing posts and pages. ",
+              "explicationlist": [
+                {"explicationitem": "<strong>Image Sizes</strong> - Those settings may be overwritten or complemented with additional sizes by the active theme.<br>Images will be scaled proportionally."},
+                {"explicationitem": "<strong>Uploading Files</strong> - All uploads including images should be organized in month- and year-based folders."}
+              ],
+              "links": [
+                {"path":"https://codex.wordpress.org/Settings_Media_Screen",
+                  "text":"WordPress.org - \"Settings Media Screen\"",
+                  "type": "codex"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"},
+                {"label":"Performance"}
+              ],
+              "priority": "high"
+            },
+            {
+              "title": "Settings → Permalinks",
+              "explications":"Permalinks are what makes a \"nice\", human-readable URL.<br>It´s totally up to you and your liking on how to adjust them. However, there are some recommendations from a SEO-perspective.",
+              "links": [
+                {"path":"https://yoast.com/wordpress-seo-url-permalink/",
+                  "text":"YOAST - \"The ideal WordPress SEO URL structure\"",
+                  "type": "link"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"},
+                {"label":"SEO"}
+              ],
+              "priority": "high"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "Cleanup",
+      "categories": [
+        {
+          "title": "Cleanup",
+          "tasks": [
+            {
+              "title": "Clean up files",
+              "explications":"Make sure to get rid of any unnecessary or telltale files that allow to draw conclusions about the installed WordPress version.",
+              "explicationlist": [
+                {"explicationitem": "Delete \"<strong>wp-config-sample.php</strong>\" from your installations root-directory."},
+                {"explicationitem": "Delete \"<strong>readme.html</strong>\" from your installations root-directory."},
+                {"explicationitem": "Delete \"<strong>license.txt</strong>\" from your installations root-directory."}
+              ],
+              "code": "",
+              "links": [
+                {"path":"https://www.web2generators.com/apache-tools/htpasswd-generator",
+                  "text":"HTPasswd Generator",
+                  "type": "link"}
+              ],
+              "tags": [
+                {"label":"Post-Install"}
+              ],
+              "priority": "low"
+            },
+            {
+              "title": "Clean up content",
+              "explications":"WordPress installs a number of dummy content items by default. Make sure to get rid of any last piece of it and start from scratch.",
+              "explicationlist": [
+                {"explicationitem": "\"<strong>Appearance → Menus</strong>\" - delete Top Menu and Social Menu."},
+                {"explicationitem": "\"<strong>Comments</strong>\" - mark all and move to trash."},
+                {"explicationitem": "\"<strong>Pages → all Pages</strong>\" - mark all and move to trash."},
+                {"explicationitem": "\"<strong>Posts → all Posts</strong>\" - mark all and move to trash."},
+                {"explicationitem": "\"<strong>Media → Library</strong>\" - click \"Bulk select\" in header, mark all and delete selected."},
+                {"explicationitem": "\"<strong>Plugins</strong>\" - \"Akismet\" and \"Hello Dolly\" are installed by default. For Akismet there are other plugins available that are not only better, but also in compliance with data protection laws.<br>Helly Dolly serves no (real world) purpose at all so it should also get deleted."}
+              ],
+              "code": "",
+              "links": [
+                {"path":"http://www.wpbeginner.com/plugins/what-is-the-hello-dolly-wordpress-plugin-should-you-delete-it/",
+                  "text":"wpbeginner - \"What is the Hello Dolly WordPress Plugin? Should You Delete it?\"",
+                  "type": "link"}
+              ],
+              "tags": [
+                {"label":"Post-Install"}
+              ],
+              "priority": "high"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "Prepare Staging-Site",
+      "categories": [
+        {
+          "title": "Secure Site",
+          "tasks": [
+            {
+              "title": "Deny access via .htaccess / .htpasswd",
+              "explications":"A staging site should never be accessible by anyone except the developers. Make sure you deny access to anyone else.",
+              "explicationlist": [
+                {"explicationitem": "Set up <strong>.htaccess / .htpasswd</strong> via your hosting dashboard, a .htaccess generator or at least a plugin. like \"Password Protected\" or \"Coming Soon Page & Maintenance Mode by SeedProd\""}
+              ],
+              "code": "",
+              "links": [
+                {"path":"https://www.web2generators.com/apache-tools/htpasswd-generator",
+                  "text":"HTPasswd Generator ",
+                  "type": "tools"},
+                {"path":"https://wordpress.org/plugins/coming-soon/",
+                  "text":"Plugin - Coming Soon Page & Maintenance Mode by SeedProd",
+                  "type": "plugin"},
+                {"path":"https://wordpress.org/plugins/password-protected/",
+                  "text":"Plugin - \"Password Protected\"",
+                  "type": "plugin"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Staging"},
+                {"label":"Security"}
+              ],
+              "priority": "medium"
+            }            
+          ]
+        },
+        {
+          "title": "Debugging Output and Logging",
+          "tasks": [
+            {
+              "title": "Activate Logging",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": "<strong>Site Title</strong> - "}
+              ],
+              "code": "define( 'WP_DEBUG', true ); // Or false<br>if ( WP_DEBUG ) {<br>  @ini_set( 'log_errors', 'On' );<br>  @ini_set( 'display_errors', 'On' );<br>  @ini_set('error_log',dirname(__FILE__) . '/wp-content/logs/error.log');<br>}",
+              "links": [
+                {"path":"",
+                  "text":"WordPress.org - \"Settings General Screen\"",
+                  "type": "codex"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Staging"},
+                {"label":"Development"}
+              ],
+              "priority": "medium"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title_group": "Placeholder",
+      "categories": [
+        {
+          "title": "Placeholder",
+          "tasks": [
+            {
+              "title": "Placeholder",
+              "explications":"",
+              "explicationlist": [
+                {"explicationitem": "<strong>Site Title</strong> - "}
+              ],
+              "code": "",
+              "links": [
+                {"path":"",
+                  "text":"WordPress.org - \"Settings General Screen\"",
+                  "type": "codex"},
+                {"path":"",
+                  "text":"WordPress.org - \"Formatting Date and Time\"",
+                  "type": "codex"},
+                {"path":"",
+                    "text":"PHP.net - date() function",
+                    "type": "link"}
+              ],
+              "tags": [
+                {"label":"Post-Install"}
+              ],
+              "priority": "medium"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

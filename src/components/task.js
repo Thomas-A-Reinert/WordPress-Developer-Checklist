@@ -50,6 +50,10 @@ const TypeIcon = type => {
     return icon + "fa-wrench";
   } else if (type === "codex") {
     return icon + "fa-wordpress";
+  } else if (type === "plugin") {
+    return icon + "fa-plug";
+  } else if (type === "theme") {
+    return icon + "fa-desktop";
   }
 };
 
@@ -82,7 +86,7 @@ class Task extends Component {
                   
                   {task.code && (
                     <pre>
-                      <code>{task.code}</code>
+                      <code dangerouslySetInnerHTML={{__html: task.code}}></code>
                     </pre>
                   )}
                 </div>
@@ -92,7 +96,7 @@ class Task extends Component {
                 <ul className="explicationlist">
                   {task.explicationlist.map((explicationlist) => {
                     return (
-                      <li>{explicationlist.explicationitem}</li>
+                      <li dangerouslySetInnerHTML={{__html: explicationlist.explicationitem}}></li>
                     );
                   })}
                 </ul>
@@ -100,9 +104,9 @@ class Task extends Component {
 
               {task.links && (
                 <ul className="fa-ul">
-                  {task.links.map((link, i) => {
+                  {task.links.map((link) => {
                     return (
-                      <li key={link}>
+                      <li>
                         <a href={link.path} target="_blank" rel="noopener noreferrer">
                           <i className={TypeIcon(link.type)} aria-hidden="true" />
                           {link.text}

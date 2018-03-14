@@ -25,3 +25,23 @@
   padding: .175rem .75rem;
   font-size: 70%;
 }
+
+.explicationlist {
+  list-style-type: square;
+
+  li {
+    list-style-type: square;
+
+    strong {
+      font-weight: 500;
+    }
+  }
+
+  
+}
+
+pre {
+  background: $code-bg;
+  padding: 1em;
+  color: #000;
+}

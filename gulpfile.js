@@ -28,6 +28,7 @@ const PATH = {
   "SASS": "./src/assets/sass/main.scss",
   "SASS_DIST": "./src/assets/css",
   "NORMALIZE_CSS": "./node_modules/normalize.css/normalize.css",
+  "SEMANTIC_UI_CSS": "./node_modules/semantic-ui-css/semantic.css",
 };
 
 process.env.NODE_ENV = 'production';
@@ -97,7 +98,7 @@ gulp.task('sass',['js', 'html'], () =>
     }),
       uncss({
         html: [PATH.DIST + '/*.html'],
-        ignore: [/^\.fa-angle-*/,/^\.fa-external-link$/,/^\.fa-wordpress$/,/\.checked/,/^\.fa-book$/,/^\.fa-wrench$/,/^\.fa-check$/,/fa-ul/, /fa-li/,/^blockquote/,/^pre/,/^code/,/^em/,/^\.card*/]
+        ignore: [/^\.fa-angle-*/,/^\.fa-external-link$/,/^\.fa-wordpress$/,/^\.fa-desktop$/,/^\.fa-plug$/,/\.checked/,/^\.fa-book$/,/^\.fa-wrench$/,/^\.fa-check$/,/fa-ul/, /fa-li/,/^blockquote/,/^pre/,/^code/,/^em/,/^\.card*/,/^\.explicationlist/,/^\.form-control/]
       })
     ]))
     .pipe(gulp.dest(PATH.SASS_DIST ))
@@ -107,7 +108,7 @@ gulp.task('sass',['js', 'html'], () =>
  * Add cross-browser rules, and minify css
  */
 gulp.task('postcss',['sass','js'], () =>
-  gulp.src([PATH.NORMALIZE_CSS,PATH.SASS_DIST +"/main.css"])
+  gulp.src([PATH.NORMALIZE_CSS,PATH.SEMANTIC_UI_CSS,PATH.SASS_DIST +"/main.css"])
     .pipe(concat('main.css'))
     .pipe(sourcemaps.init())
     .pipe(postcss([nano(),]))

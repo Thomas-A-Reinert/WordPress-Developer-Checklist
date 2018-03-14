@@ -1,4 +1,4 @@
-$footer-size: 120px;
+$footer-size: 80px;
 
 body,html {
   width: 100%;
@@ -33,11 +33,11 @@ body:after {
     display: none;
   }
 }
-// .show-on-mobile{
-//   @media (max-width: 40.0rem) {
-//     max-width: 100% !important;
-//   }
-// }
+.show-on-mobile{
+  @media (max-width: 40.0rem) {
+    max-width: 100% !important;
+  }
+}
 header {
   background-color: $bg-medium;
   color: $col-medium;
@@ -48,11 +48,11 @@ header {
   }
 
   .form-control {
-    background-color: $dark-bg !important;
-    color: $dark-content !important;
+    background-color: $dark-bg;
+    color: $dark-content;
 
     &::placeholder {
-      color: $header-bg-input;
+      color: $input-placeholder;
     }
 
   }
@@ -107,13 +107,12 @@ header {
 
       & .go-top {
         text-transform: none;
-        // vertical-align: baseline;
         transition: all 0.2s ease;
         line-height: 3.2;
         text-decoration: none;
 
         &:hover {
-          color: $orange;
+          color: $grey;
         }
 
       }
@@ -123,10 +122,10 @@ header {
   }
 
   .category-title {
-    color: $light-content;
+    color: $header-bg-input;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
-    border-bottom: solid 1px $light-content;
+    border-bottom: solid 1px $header-bg-input;
   }
 
   .task {
@@ -199,15 +198,28 @@ footer {
   height: $footer-size;
   margin-top: -$footer-size;
   text-align: center;
-  background-color: $bg-medium;
+  background-color: $dark-bg;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 80%;
 
   p {
     margin: 0;
-    color: $col-medium;
+    color: $card-header-content;
     line-height: 2rem;
+  }
+
+  a {
+    color: $dark-content;
+
+    &:hover {
+      color: $card-header-content;
+    }
+
+    &:visited {
+      color: $dark-content;
+    }
   }
 
   .heart {

@@ -10,7 +10,7 @@ class GroupCategories extends Component {
         {group_categories.map(group => {
           return (
             <section>
-              <h2 className="group-title mb-2 mt-3">
+              <h2 className="group-title mb-2 mt-5">
                 {group.title_group}{" "}
                 <a className="go-top h6 pull-right" href="#top">
                   <i className="fa fa-arrow-up" aria-hidden="true" />

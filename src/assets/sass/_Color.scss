@@ -22,7 +22,7 @@ $grey:                rgba(0,0,0,.5);
 $bg-medium:           rgba(89,98,107,1);
 $col-medium:          rgba(255,255,255,1);
 
-$dark-bg:             rgba(89,98,107,1);
+$dark-bg:             #343a40;
 $outline-dark:        rgba(0,0,0,.25);
 $dark-content:        rgba(255,255,255,1);
 
@@ -36,3 +36,6 @@ $card-header-content: rgba(255,255,255,.9);
 
 $header-bg-color:       $grey;
 $header-bg-input:     rgba(0,0,0,0.9);
+$input-placeholder:   rgba(255,255,255,.5);
+
+$code-bg:             rgb(225,225,225);

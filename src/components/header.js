@@ -11,16 +11,11 @@ const Header = ({ checklists, selected, done, team, project_name, url }) => {
         <h2 className="checklist-name">
           Checklist: <strong>{checklists[selected].name}</strong>
         </h2>
-        {/* <div className="descriptionContainer">
-          <a class="btn btn-primary" data-toggle="collapse" onClick="#checklistDescription" role="button" aria-expanded="false" aria-controls="checklistDescription">
-              {checklists[selected].description}
-          </a>
-          <div className="collapse for-print" id="checklistDescription">
-              <div className="card card-body">
-                  {checklists[selected].summary}
-              </div>
-          </div>
-      </div> */}
+        <div className="descriptionContainer">
+          <p className="h6">{checklists[selected].description}</p>
+          <p>{checklists[selected].summary}</p>
+          <hr/>
+        </div>
         <Details team={team} project_name={project_name} url={url} />
         <Toolbar checklists={checklists} selected={selected} />
         <Status done={done} />
