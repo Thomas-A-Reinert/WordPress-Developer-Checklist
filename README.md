@@ -13,11 +13,11 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master&style=flat-square)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
 [![Last deployed](https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed&style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
-
-
 [![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
 
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
+[![GitHub followers](https://img.shields.io/github/followers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&logo=github&label=Follow)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers)
+
 
 **Project completion**
 
@@ -141,7 +141,7 @@ Sample template:
 To make the checklist available in app you need to modify `src/stores/checklistStore.js` 
 and add `import example from '../checklist/example.json';`.
 
-Next add it in INITIAL_DATA:
+Next add it in INITIAL_DATA in `./src/checklistStore.js`:
 ```js
 const INITIAL_DATA = {
   checklists: [
