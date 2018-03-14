@@ -10,14 +10,19 @@
 </p> -->
 
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
-[![Last deployed](https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
+[![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master&style=flat-square)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![Last deployed](https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed&style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
 
 
-[![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
+[![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
 
-[![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
+
+**Project completion**
+[![GitHub stars](https://img.shields.io/badge/Prerequisites, Installation &amp; Post-Install-90%-green.svg?style=flat-square)]()
+
+
 
 
 
