@@ -16,7 +16,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
 
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
-[![GitHub followers](https://img.shields.io/github/followers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&logo=github&label=Follow)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers)
+[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=flat-square&logo=github&label=Follow)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers)
 
 
 **Project completion**
