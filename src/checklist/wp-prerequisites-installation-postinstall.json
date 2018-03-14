@@ -124,11 +124,14 @@
           "tasks": [
             {
               "title": "Manually edit \"wp-config.php\"",
-              "explications":"You can install WordPress manually or wizard-driven (\"Famous 5-Minute Installation\"). If you plan to go for the manual installation please check the link below.",
+              "explications":"You can install WordPress manually or wizard-driven (\"Famous 5-Minute Installation\"). If you plan to go for the manual installation please check the link below. You may also use GenerateWP´s wp-config.php Generator to customize your wp-config.php.",
               "links": [
                 {"path":"https://codex.wordpress.org/Editing_wp-config.php",
                   "text":"WordPress.org - \"Editing wp-config.php\"",
-                  "type": "codex"}
+                  "type": "codex"},
+                {"path":"https://generatewp.com/wp-config/",
+                  "text":"GenerateWP´s wp-config.php Generator",
+                  "type": "link"}
               ]
             }
           ]
@@ -175,6 +178,36 @@
         {
           "title": "Adjust Settings",
           "tasks": [
+            {
+              "title": "Optimize wp-config.php Settings",
+              "explications":"There is a lot you can customize in your wp-config.php that is not really well-documented on WordPress Codex. We´ll just go through the most interesting settings here. You´ll want to do these customization before doing anything else with your site as they may conflict later later on otherwise.",
+              "explicationlist": [
+                {"explicationitem": "<strong>Obfuscation</strong> - In some cases you don´t want to show on first sight that your site ist WordPress-driven. So it may be helpful to relocate the paths for WordPress´ Content (<code>./wp-content</code>), Plugins (<code>./wp-content/plugins</code>) and Uploads-folders (<code>./wp-content/uploads</code>).<br><em>Note:</em> This is known to conflict with some not well-coded Plugins."},
+                {"explicationitem": "<strong>Revisions and Trash</strong> - Every time you save a post it will be saved as a new revision. Those revisions will normally never get deleted, therefore bloating your database. From experience there is simply no need to keep all those but limit the amount of revisions that will be kept. It´s also helpful to activate a trash-bin for media-uploads and to limit the time items will be kept in trash."},
+                {"explicationitem": "<strong>COMPRESS_CSS / COMPRESS_SCRIPTS / CONCATENATE_SCRIPTS</strong> - Sounds good. But will only affect scripts and CSS styles that will be loaded for the backend. Set compression to true, but avoid setting concatenation to true, because if one script fails to load or you encounter an error, you´ll probably have a hard time finding it."},
+                {"explicationitem": "<strong>ENFORCE_GZIP</strong> - Should be activated, no known problems but can still be improved in combination with optimized .htaccess settings and/or plugins."},
+                {"explicationitem": "<strong>Disable Backend File Editor</strong> - By default you can edit plugin- (Plugins  →  Editor) and theme-files (Appearance  → Editor) via the backend. Since one of the latest releases you´ll receive a warning notice before accessing the editor, but it nevertheless poses a security risk that can easily be avoided."}                
+              ],
+              "links": [
+                {"path":"https://generatewp.com/wp-config/",
+                  "text":"GenerateWP´s wp-config.php Generator",
+                  "type": "link"},
+                {"path":"https://codex.wordpress.org/Editing_wp-config.php",
+                  "text":"WordPress.org - \"Formatting Date and Time\"",
+                  "type": "codex"},
+                {"path":"https://codex.wordpress.org/Editing_wp-config.php#Disable_the_Plugin_and_Theme_Editor",
+                  "text":"WordPress.org - Why you should disable the Plugin and Theme Editor",
+                  "type": "codex"}
+              ],
+              "code": "/* Custom WordPress URL. */<br>define( 'WP_CONTENT_URL', 'content' );<br>define( 'UPLOADS', 'uploads' );<br>define( 'WP_PLUGIN_URL', 'plugins' );<br><br>/* Specify maximum number of Revisions. */<br>define( 'WP_POST_REVISIONS', '10' );<br><br>/* Media Trash. */<br>define( 'MEDIA_TRASH', true );<br>/* Trash Days. */<br>define( 'EMPTY_TRASH_DAYS', '14' );<br><br>/* Compression */<br>define( 'COMPRESS_CSS', true );<br>define( 'COMPRESS_SCRIPTS', true );<br>define( 'CONCATENATE_SCRIPTS', false );<br>define( 'ENFORCE_GZIP', true );<br><br>/* Updates */<br>define( 'DISALLOW_FILE_EDIT', true );",
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Settings"},
+                {"label":"Performance"},
+                {"label":"Customization"}
+              ],
+              "priority": "high"
+            },
             {
               "title": "Settings → General",
               "explications":"",
@@ -396,24 +429,55 @@
           ]
         },
         {
-          "title": "Debugging Output and Logging",
+          "title": "Debugging and Logging",
           "tasks": [
             {
               "title": "Activate Logging",
-              "explications":"",
+              "explications":"For a develoment site you´ll want to make sure that every bug will get displayed as soon as it slips in. So make sure to activate on-screen display as well as logging. Make sure to make <code>&lt;filename&gt;</code> non-guessable!",
               "explicationlist": [
-                {"explicationitem": "<strong>Site Title</strong> - "}
+                {"explicationitem": ""}
               ],
-              "code": "define( 'WP_DEBUG', true ); // Or false<br>if ( WP_DEBUG ) {<br>  @ini_set( 'log_errors', 'On' );<br>  @ini_set( 'display_errors', 'On' );<br>  @ini_set('error_log',dirname(__FILE__) . '/wp-content/logs/error.log');<br>}",
+              "code": "define( 'WP_DEBUG', true ); // Or false<br>if ( WP_DEBUG ) {<br>  define( 'WP_DEBUG_DISPLAY', true );<br>  @ini_set( 'display_errors', 'On' );<br>  @ini_set( 'log_errors', 'On' );<br>  @ini_set('error_log',dirname(__FILE__) . '/wp-content/logs/&lt;filename&gt;.log');<br>}",
               "links": [
-                {"path":"",
-                  "text":"WordPress.org - \"Settings General Screen\"",
+                {"path":"https://codex.wordpress.org/Debugging_in_WordPress",
+                  "text":"WordPress.org - \"Debugging in WordPress\"",
                   "type": "codex"}
               ],
               "tags": [
                 {"label":"Post-Install"},
                 {"label":"Staging"},
-                {"label":"Development"}
+                {"label":"Development"},
+                {"label":"Debugging"}
+              ],
+              "priority": "medium"
+            },
+            {
+              "title": "Debugging Tools",
+              "explications":"There is a lot of tools available to show info about specific topics like optimizing database queries, performance problems, theme validation and many more. We´ll recommend those in their specific context. But some are really recommended for general development purposes.",
+              "explicationlist": [
+                {"explicationitem": "<strong>\"Debug Bar\"</strong> - Adds a debug menu to the admin bar that shows query, cache and other information. It´s pluggable with a whole heap of add-ons."},
+                {"explicationitem": "<strong>\"Log Deprecated Notices\"</strong> - Informs about any deprecated files and functions being in use. Very helpful if you want to make sure that your site will work long-term."}
+              ],
+              "code": "",
+              "links": [
+                {"path":"https://wordpress.org/plugins/search/debug",
+                  "text":"WordPress.org - Overview of Debugging Tools for WordPress",
+                  "type": "plugin"},
+                {"path":"https://wordpress.org/plugins/debug-bar/",
+                  "text":"Debug Bar",
+                  "type": "plugin"},
+                {"path":"https://wordpress.org/plugins/search/debug+bar/",
+                  "text":"Available Debug Bar Plugins",
+                  "type": "plugin"},
+                {"path":"https://wordpress.org/plugins/log-deprecated-notices/",
+                  "text":"Log Deprecated Notices",
+                  "type": "plugin"}
+              ],
+              "tags": [
+                {"label":"Post-Install"},
+                {"label":"Staging"},
+                {"label":"Development"},
+                {"label":"Debugging"}
               ],
               "priority": "medium"
             }
