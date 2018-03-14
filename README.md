@@ -194,7 +194,8 @@ Designed and created with ♥ by [Thomas A. Reinert](https://www.tarcgn.de/portf
 
 ## Credits
 This project wouldn´t exist without the selfless work of the following persons / projects:
-- Code based on the [Front-End Checklist](https://github.com/AlexisDanizan/Checklist-Tools-Website) by [Alexis Danizan](https://github.com/AlexisDanizan/)
+- Code for the *WordPress-Developer-Checklist* based on the [Front-End Checklist](https://github.com/AlexisDanizan/Checklist-Tools-Website) by [Alexis Danizan](https://github.com/AlexisDanizan/)
 - [Brian A. Danielak](https://gist.github.com/briandk) for his [CONTRIBUTING.md Template](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62)
+- [Phillip Johnston](https://github.com/phillipjohnston) for his [PULL_REQUEST_TEMPLATE.md](https://github.com/embeddedartistry/embedded-resources/blob/master/docs/PULL_REQUEST_TEMPLATE_example.md)
 - The people from [Twitter](https://github.com/twitter) for their [Code-of-Conduct](https://github.com/twitter/code-of-conduct),<br>
 Attribution: "@TwitterOSS Code of Conduct" © 2013 Twitter, Inc, used under a Creative Commons Attribution Unported license: http://creativecommons.org/licenses/by/3.0/

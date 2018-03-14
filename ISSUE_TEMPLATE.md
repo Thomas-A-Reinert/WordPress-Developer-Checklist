@@ -1,3 +1,5 @@
+Please delete anything that does not apply for you!
+
 ## I'm submitting a ...
   - [ ] bug report
   - [ ] feature request
@@ -9,9 +11,7 @@
   - Browser: [ all | Chrome XX | Firefox XX | IE XX | Safari XX | Mobile Chrome XX | Android X.X Web Browser | iOS XX Safari ]
   - Language: [ all | HTML | S/CSS | ES6 | JSON | PREACT | NPM ]
 
-
 ---
-
 
 ## In case of Bugs
 
