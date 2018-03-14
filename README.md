@@ -25,7 +25,7 @@
 [![Development](https://img.shields.io/badge/Development-0%25-%23f00.svg)]()
 [![Security](https://img.shields.io/badge/Security-0%25-%23f00.svg)]()
 [![Performance](https://img.shields.io/badge/Performance-0%25-%23f00.svg)]()
-[![Theme-Development](https://img.shields.io/badge/Theme-evelopment-0%25-%23f00.svg)]()
+[![Theme-Development](https://img.shields.io/badge/Theme--Development-0%25-%23f00.svg)]()
 [![Plugin-Development](https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg)]()
 
 
