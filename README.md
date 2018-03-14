@@ -17,6 +17,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
 
 [![Github all releases](https://img.shields.io/github/downloads/Thomas-A-Reinert/WordPress-Developer-Checklist/total.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
+[![Github Releases (by Release)](https://img.shields.io/github/downloads/Thomas-A-Reinert/WordPress-Developer-Checklist/1.0.0/total.svg)](https://GitHub.comThomas-A-Reinert/WordPress-Developer-Checklist/releases/)
+
 [![GitHub forks](https://img.shields.io/github/forks/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&label=Fork&maxAge=2592000)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/network/)
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
 [![GitHub watchers](https://img.shields.io/github/watchers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&label=Watch&maxAge=2592000)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers/)
