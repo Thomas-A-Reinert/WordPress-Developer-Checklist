@@ -1,41 +1,37 @@
-<h2 align="center"><a href="https://alexisdanizan.github.io">🍿 Checklist Tools Website</a></h2>
+<h2 align="center"><a href="https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist">WordPress-Developer-Checklist</a></h2>
 
 <p align="center">
   <em>A user-friendly and fluid interface for using checklists.</em>
 </p>
-<p align="center">
+<!-- <p align="center">
     <a href="https://alexisdanizan.github.io" target="_blank" rel="noopener noreferrer">
         <img alt="Checklist tools website" title="Checklist tools website" src="https://github.com/AlexisDanizan/Checklist-Tools-Website/blob/master/data/checklist-tools.gif?raw=true" width="800">
     </a>
-</p>
+</p> -->
 
 
-[![GitHub license](https://img.shields.io/github/license/AlexisDanizan/Checklist-Tools-Website.svg)](https://github.com/AlexisDanizan/Checklist-Tools-Website/blob/master/LICENSE)
-[![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
-[![GitHub issues](https://img.shields.io/github/issues/AlexisDanizan/Checklist-Tools-Website.svg)](https://github.com/AlexisDanizan/Checklist-Tools-Website/issues)
-[![GitHub stars](https://img.shields.io/github/stars/AlexisDanizan/Checklist-Tools-Website.svg)](https://github.com/AlexisDanizan/Checklist-Tools-Website/stargazers)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/AlexisDanizan/Checklist-Tools-Website.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FAlexisDanizan%2FChecklist-Tools-Website)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
+[![Travis](https://img.shields.io/travis/USER/REPO.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+
 
 **All the power of checklists, without the overhead:**
  - User-friendly and fluid interface
- - Fast build with [Preact]() and [Milligram](https://github.com/milligram/milligram)
+ - Fast build with [Preact](https://github.com/developit/preact) and [Bootstrap4](https://github.com/twbs)
  - Generate PDF report
  - Offline checklists storage with LocalStorage
  - Auto-save your progress 🚀
- - 💥 **Instant no-config app bundling**
+ - **Instant no-config app bundling**
 
-Based on checklists:
- - [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
- - [Search Engine Optimization](https://github.com/marcobiedermann/search-engine-optimization)
- - [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist)
- - [The Side Project Marketing Checklist](https://github.com/karllhughes/side-project-marketing)
+Code based on the [Front-End Checklist by Alexis Danizan](https://github.com/AlexisDanizan/Checklist-Tools-Website)
 
-### Use the online version: [alexisdanizan.github.io](https://alexisdanizan.github.io)
+### Use the online version: [wpchecklist.tarthemes.com/](https://wpchecklist.tarthemes.com/)
 
 
 ## Installation
 
-**Install with npm**
+<!-- **Install with npm**
 ```bash
 npm i checklist-tools-website
 ```
@@ -43,12 +39,12 @@ npm i checklist-tools-website
 **Install with Yarn**
 ```bash
 yarn add checklist-tools-website
-```
+``` -->
 
 **Install manually**
 
 ```bash
-git clone https://github.com/AlexisDanizan/Checklist-Tools-Website.git
+git clone https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist.git
 yarn install
 # or
 npm install
@@ -86,25 +82,38 @@ Create a new json files in `src/checklist`.
 Sample template:
 ```json
 {
-  "name": "Front-dev",
+  "name": "Prerequisites, Installation & Post-Install",
+  "description": "This checklist describes the WordPress installation prerequisites and installation process as well as post-install tasks.",
+  "summary": "",
   "group_categories": [
     {
-      "title_group": "Head",
+      "title_group": "WordPress Prerequisites",
       "categories": [
         {
-          "title": "Meta tags",
+          "title": "WordPress installation requirements",
           "tasks": [
             {
-              "title": "Doctype",
-              "links": [
-                {"path":"https://www.w3.org/TR/html5/syntax.html#determining-the-character-encoding",
-                  "text":"Determining the character encoding - HTML5 W3C",
-                  "type": "link"}
+              "title": "Minimum hosting requirements",
+              "explications":"Make sure your hosting plan at least supports the following setup. But you should make sure you fulfill the recommended setup. Note: Administrative tasks may consume much more memory!",
+              "explicationlist": [
+                {"explicationitem": "PHP 5.2.4 or greater"},
+                {"explicationitem": "MySQL 5.0 or greater"},
+                {"explicationitem": "Nginx or Apache with mod_rewrite module"},
+                {"explicationitem": "Minimum 40MB memory allocated to PHP for a single sites (at least 64MB for multisite)"},
+                {"explicationitem": "At least 60s PHP max execution time"},
+                {"explicationitem": "HTTPS support"}
               ],
-              "explications":"The Doctype is HTML5 and is at the top of all your HTML pages.",
-              "code":"<!doctype html> <!-- HTML5 -->",
+              "links": [
+                {"path":"https://wordpress.org/about/requirements/",
+                  "text":"WordPress.org - \"Requirements\"",
+                  "type": "codex"},
+                {"path":"https://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP",
+                  "text":"WordPress.org - \"Increasing memory allocated to PHP\"",
+                  "type": "codex"}
+              ],
+              "code":"",
               "priority": "high"
-            }
+            },
           ]
         }
       ]
@@ -141,7 +150,7 @@ The **Checklist Tools Website** repository consists of two branches:
 
 #### 1. `master`
 
-This branch consists of the current stable branchof [Checklist Tools Website](https://github.com/AlexisDanizan/Checklist-Tools-Website).
+This branch consists of the current stable branch of [WordPress-Developer-Checklist](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist).
 
 #### 2. `develop`
 
@@ -149,17 +158,14 @@ This branch will be used to make some significant changes to the structure, cont
 
 ## Support
 
-If you have any question or suggestion, don't hesitate to use Twitter:
-* [Twitter](https://twitter.com/alexisdanizan)
-
 ## Author
 
-**[Alexis Danizan](https://github.com/AlexisDanizan)**
-
+**[Thomas A. Reinert](https://github.com/Thomas-A-Reinert/)**
+<!-- 
 ## Contributors
 
-This project exists thanks to all the people who contribute.
+This project exists thanks to all the people who contribute. -->
 
 ## License
 
-Designed and created with ♥ by Danizan Alexis. Licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
+Designed and created with ♥ by [Thomas A. Reinert](https://www.tarcgn.de/portfolio/). Licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
