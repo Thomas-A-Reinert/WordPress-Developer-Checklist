@@ -1,13 +1,15 @@
 <h2 align="center"><a href="https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist">WordPress-Developer-Checklist</a></h2>
 
-<p align="center">
+<!-- <p align="center">
   <em>A user-friendly and fluid interface for using checklists.</em>
-</p>
+</p> -->
 <!-- <p align="center">
     <a href="https://alexisdanizan.github.io" target="_blank" rel="noopener noreferrer">
         <img alt="Checklist tools website" title="Checklist tools website" src="https://github.com/AlexisDanizan/Checklist-Tools-Website/blob/master/data/checklist-tools.gif?raw=true" width="800">
     </a>
 </p> -->
+
+**Repository Status**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-red.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub release](https://img.shields.io/github/release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
@@ -23,12 +25,9 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/graphs/contributors/)
 
 
-**All content is distributed as**
-
-[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 
-**Project completion**
+**Checklist/s Completion Status**
 
 [![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-80%25-yellowgreen.svg?style=flat-square)]()
 [![Development](https://img.shields.io/badge/Development-0%25-%23f00.svg?style=flat-square)]()
@@ -38,6 +37,10 @@
 [![Plugin-Development](https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg?style=flat-square)]()
 
 
+
+**All Content Is Distributed As**
+
+[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 
 
@@ -51,7 +54,8 @@
 
 Code based on the [Front-End Checklist by Alexis Danizan](https://github.com/AlexisDanizan/Checklist-Tools-Website)
 
-### Use the online version: [wpchecklist.tarthemes.com/](https://wpchecklist.tarthemes.com/)
+**Use the online version:**
+[wpchecklist.tarthemes.com/](https://wpchecklist.tarthemes.com)
 
 
 ## Installation
@@ -147,10 +151,10 @@ Sample template:
 }
 ```
 
-To make the checklist available in app you need to modify `src/stores/checklistStore.js` 
+To make the checklist available in app you need to modify `./src/stores/checklistStore.js` 
 and add `import example from '../checklist/example.json';`.
 
-Next add it in INITIAL_DATA in `./src/checklistStore.js`:
+Next add it in INITIAL_DATA in `./src/stores/checklistStore.js`:
 ```js
 const INITIAL_DATA = {
   checklists: [
@@ -163,13 +167,14 @@ const INITIAL_DATA = {
 ## Troubleshooting
 
 The new checklist does not appear in select:
- - Empty the localstorage before add a new checklist.
+ - Empty the localStorage before add a new checklist.
+ - Try the Chrome extension ["Clear Session"](https://chrome.google.com/webstore/detail/clear-session/maejjihldgmkjlfmgpgoebepjchengka) to clear the localStorage for the current window
  
 ## Contributing
 
 **Open an issue or a pull request to suggest changes or additions.**
 
-### Guide
+<!-- ### Guide
 
 The **Checklist Tools Website** repository consists of two branches:
 
@@ -179,7 +184,7 @@ This branch consists of the current stable branch of [WordPress-Developer-Checkl
 
 #### 2. `develop`
 
-This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new checklist.
+This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new checklist. -->
 
 ## Support
 
