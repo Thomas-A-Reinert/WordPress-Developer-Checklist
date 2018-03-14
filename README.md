@@ -10,10 +10,7 @@
 </p> -->
 
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-
-[![Travis](https://img.shields.io/travis/USER/REPO.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
 
 **All the power of checklists, without the overhead:**
@@ -21,7 +18,7 @@
  - Fast build with [Preact](https://github.com/developit/preact) and [Bootstrap4](https://github.com/twbs)
  - Generate PDF report
  - Offline checklists storage with LocalStorage
- - Auto-save your progress 🚀
+ - Auto-save your progress
  - **Instant no-config app bundling**
 
 Code based on the [Front-End Checklist by Alexis Danizan](https://github.com/AlexisDanizan/Checklist-Tools-Website)
