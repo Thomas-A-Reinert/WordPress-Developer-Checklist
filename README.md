@@ -9,25 +9,42 @@
     </a>
 </p> -->
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-red.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
+[![GitHub release](https://img.shields.io/github/release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
+[![GitHub version](https://badge.fury.io/gh/Thomas-A-Reinert%2FWordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub release](https://img.shields.io/github/release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
+[![GitHub commits](https://img.shields.io/github/commits-since/Thomas-A-Reinert/WordPress-Developer-Checklist/v1.0.0.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commit/)
+
 [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master&style=flat-square)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
 [![Last deployed](https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed&style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/Thomas-A-Reinert/WordPress-Developer-Checklist/badges.svg)](http://isitmaintained.com/project/Thomas-A-Reinert/WordPress-Developer-Checklist/badges "Percentage of issues still open")
+
 
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
-[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=flat-square&logo=github&label=Follow)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers)
+[![GitHub watchers](https://img.shields.io/github/watchers/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/watchers/)
+[![GitHub followers](https://img.shields.io/github/followers/Thomas-A-Reinert.svg?style=social&label=Follow&maxAge=2592000)](https://github.comThomas-A-Reinert?tab=followers)
+[![GitHub contributors](https://img.shields.io/github/contributors/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/graphs/contributors/)
+
+
+
+[![Github all releases](https://img.shields.io/github/downloads/Thomas-A-Reinert/WordPress-Developer-Checklist/total.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
+[![GitHub forks](https://img.shields.io/github/forks/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square&label=Fork&maxAge=2592000)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/network/)
+
+** All content is distributed as**
+[![licensebuttons by-nc-sa](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 
 
 **Project completion**
 
-[![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-80%25-yellowgreen.svg)]()
-[![Development](https://img.shields.io/badge/Development-0%25-%23f00.svg)]()
-[![Security](https://img.shields.io/badge/Security-0%25-%23f00.svg)]()
-[![Performance](https://img.shields.io/badge/Performance-0%25-%23f00.svg)]()
-[![Theme-Development](https://img.shields.io/badge/Theme--Development-0%25-%23f00.svg)]()
-[![Plugin-Development](https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg)]()
+[![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-80%25-yellowgreen.svg?style=flat-square)]()
+[![Development](https://img.shields.io/badge/Development-0%25-%23f00.svg?style=flat-square)]()
+[![Security](https://img.shields.io/badge/Security-0%25-%23f00.svg?style=flat-square)]()
+[![Performance](https://img.shields.io/badge/Performance-0%25-%23f00.svg?style=flat-square)]()
+[![Theme-Development](https://img.shields.io/badge/Theme--Development-0%25-%23f00.svg?style=flat-square)]()
+[![Plugin-Development](https://img.shields.io/badge/Plugin--Development-0%25-%23f00.svg?style=flat-square)]()
 
 
 
