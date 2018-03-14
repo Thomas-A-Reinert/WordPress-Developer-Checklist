@@ -27,9 +27,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
 
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=flat-square&logo=github&label=Fork)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
-[![GitHub watchers](https://img.shields.io/github/watchers/badges/shields.svg?style=flat-square&logo=github&label=Watch)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
-[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=flat-square&logo=github&label=Follow)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=flat-square&logo=github&label=Fork)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/tree/master)
+[![GitHub watchers](https://img.shields.io/github/watchers/badges/shields.svg?style=flat-square&logo=github&label=Watch)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/tree/master)
+[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=flat-square&logo=github&label=Follow)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/tree/master)
 
 
 
