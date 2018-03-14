@@ -2,7 +2,7 @@
 
 ## Description
 
-Please include a summary of the change and which issue is fixed. If possible refer to the issue by using a hashtag and the issue number like that #2 .
+Please include a summary of the change and which issue is fixed. If possible refer to the issue by using a hashtag and the issue number like that https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues/2 .
 
 Please also include relevant motivation and context. List any dependencies that are required for this change.
 
