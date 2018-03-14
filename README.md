@@ -17,11 +17,11 @@
 [![Github commits (since latest release)](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/latest.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
 
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/latest.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![Github commits (since latest release)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
 
 
 
-[![GitHub commits](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/1.0.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist)
+[![GitHub commits](https://img.shields.io/github/commits-since/SubtitleEdit/subtitleedit/1.0.svg)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
 
 
 
