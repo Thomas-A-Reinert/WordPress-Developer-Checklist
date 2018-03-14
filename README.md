@@ -20,7 +20,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/stargazers)
 
 **Project completion**
-[![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites,%20Installation%20&amp;%20Post-Install-90%25-green.svg?style=flat-square)]()
+[![Prerequisites, Installation & Post-Install](https://img.shields.io/badge/Prerequisites%2C%20Installation%20%26%20Post--Install-90%25-green.svg)]()
 
 
 
