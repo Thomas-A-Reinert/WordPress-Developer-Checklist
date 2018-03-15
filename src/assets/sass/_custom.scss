@@ -1,6 +1,7 @@
 $footer-size: 60px;
 
-body,html {
+body,
+html {
   width: 100%;
   height: 100%;
   line-height: 1.15;
@@ -20,11 +21,11 @@ body:after {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: -1;   
+  z-index: -1;
 }
 
 #app {
-  min-height: 100%;
+  min-height: calc(100vh - #{$footer-size});
   padding-bottom: 2*$footer-size;
 }
 
@@ -70,6 +71,7 @@ header {
 
     i.fa {
       margin-right: 10px;
+      background: $light-bg;
     }
 
     i.high {
@@ -100,7 +102,7 @@ header {
   h2 {
     margin-top: 3rem;
     text-transform: uppercase;
-    
+
     &.group-title {
       color: $header-bg-input;
       border-bottom: solid 1px $header-bg-input;
