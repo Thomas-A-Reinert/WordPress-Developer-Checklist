@@ -1,4 +1,4 @@
-import {PRIORITY_HIGH,PRIORITY_LOW,PRIORITY_MEDIUM} from "./stores/type";
+import { PRIORITY_HIGH, PRIORITY_LOW, PRIORITY_MEDIUM } from "./stores/type";
 
 let idCounter = 0;
 
@@ -45,7 +45,7 @@ export const countStatus = (checklist) => {
   checklist.group_categories.map((group) =>{
     group.categories.map((category) => {
       category.tasks.map((task) => {
-        if(task.priority === PRIORITY_HIGH){
+        if( task.priority === PRIORITY_HIGH ){
           doneTotal.high.total++;
           if(task.done) doneTotal.high.count++;
         }else if(task.priority === PRIORITY_MEDIUM){
