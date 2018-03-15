@@ -1,15 +1,15 @@
 {
-  "name": "checklist-tools-website",
-  "version": "0.0.4",
-  "description": "The perfect Checklist Website for meticulous developers.",
+  "name": "wordpress-developer-checklist",
+  "version": "1.0.0",
+  "description": "A (hopefully) complete Checklist for WordPress developers.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "node ./node_modules/eslint/bin/eslint.js src/**/*.js",
     "mdtojson": "node mdChecklistToJson.js"
   },
-  "author": "Alexis Danizan",
-  "license": "ISC",
+  "author": "Thomas A. Reinert",
+  "license": "Apache-2.0",
   "browser": {
     "materialize": "./node_modules/materialize-css/dist/js/materialize.js"
   },
