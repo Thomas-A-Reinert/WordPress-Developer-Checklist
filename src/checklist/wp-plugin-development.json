@@ -1,17 +1,17 @@
 {
-  "name": "WordPress Performance",
+  "name": "WordPress Plugin Development",
   "description": "",
   "summary": "",
   "group_categories": [
     {
-      "title_group": "Adjusting the .htaccess",
+      "title_group": "To be done",
       "categories": [
         {
-          "title": "Keeping your .htaccess lean",
+          "title": "To be done",
           "tasks": [
             {
-              "title": "blah",
-              "explications":"fasel",
+              "title": "",
+              "explications":"",
               "explicationlist": [
                 {"explicationitem": ""},
                 {"explicationitem": ""},
@@ -31,7 +31,7 @@
               "code":"",
               "priority": "high"
             }
-
+            
           ]
         }
       ]
