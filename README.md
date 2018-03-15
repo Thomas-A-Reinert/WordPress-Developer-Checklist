@@ -13,7 +13,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-red.svg?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub release](https://img.shields.io/github/release/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/releases/)
-[![GitHub commits](https://img.shields.io/github/commits-since/Thomas-A-Reinert/WordPress-Developer-Checklist/1.0.0.svg)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commit/)
+[![GitHub commits](https://img.shields.io/github/commits-since/Thomas-A-Reinert/WordPress-Developer-Checklist/1.0.0.svg?style=flat-square)](https://GitHub.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commit/)
 [![Last deployed](https://img.shields.io/github/last-commit/Thomas-A-Reinert/WordPress-Developer-Checklist/master.svg?label=last%20deployed&style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/commits/master)
 [![Build Status](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?branch=master&style=flat-square)](https://travis-ci.org/Thomas-A-Reinert/WordPress-Developer-Checklist)
 [![GitHub issues](https://img.shields.io/github/issues/Thomas-A-Reinert/WordPress-Developer-Checklist.svg?style=flat-square)](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues)
@@ -52,22 +52,11 @@
 
 ## Installation
 
-<!-- **Install with npm**
-```bash
-npm i checklist-tools-website
-```
-
-**Install with Yarn**
-```bash
-yarn add checklist-tools-website
-``` -->
-
 **Install manually**
 
 ```bash
 git clone https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist.git
-yarn install
-# or
+
 npm install
 ```
 
@@ -77,7 +66,7 @@ npm install
 ```bash
 gulp build
 ```
-Built files are available in `dist` folder.
+Built files are available in `./dist` folder.
 
 ## Customize
 
@@ -164,25 +153,29 @@ The new checklist does not appear in select:
 
 ## Contributing
 
-**Open an issue or a pull request to suggest changes or additions.**
+**[Open an issue](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/issues/new) or [a pull request](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/compare) to suggest changes or additions.**
 
-<!-- ### Guide
+- Please follow the [Contributing Guidelines](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/blob/master/CONTRIBUTING.md) when submitting a pull request.
+- Please also follow our [Code-of-Conduct](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist/blob/master/CODE-OF-CONDUCT.md) when opening an issue or responding to one.
 
-The **Checklist Tools Website** repository consists of two branches:
+
+### Guide
+
+The **WordPress-Developer-Checklist** repository consists of two branches:
 
 #### 1. `master`
 
 This branch consists of the current stable branch of [WordPress-Developer-Checklist](https://github.com/Thomas-A-Reinert/WordPress-Developer-Checklist).
 
-#### 2. `develop`
+#### 2. `development`
 
-This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new checklist. -->
+This branch will be used to make some significant changes to the structure, content if needed. It is preferable to use the master branch to fix small errors or add a new checklist.
 
-## Support
+
 
 ## Author
 
-**[Thomas A. Reinert](https://github.com/Thomas-A-Reinert/)**
+**[Thomas A. Reinert | TAR MediaDesign](https://github.com/Thomas-A-Reinert/)**
 <!--
 ## Contributors
 

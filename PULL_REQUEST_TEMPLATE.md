@@ -2,11 +2,9 @@
 
 ## Description
 
-Please include a summary of the change and which issue is fixed. If possible refer to the issue by using a hashtag and the issue number like that #1 .
+Please include a summary of the change and which issue is fixed. If possible refer to the issue by using a hashtag and the issue number, e.g.   Thomas-A-Reinert/WordPress-Developer-Checklist#2 .
 
 Please also include relevant motivation and context. List any dependencies that are required for this change.
-
-Fixes # (issue)
 
 ## Type of change
 
@@ -21,14 +19,17 @@ Please delete options that are not relevant.
 
 Please describe the tests that you ran to verify your changes. Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
 
-- [ ] Test A
-- [ ] Test B
+- [ ] Passed W3C Validation.
+- [ ] Passed linting Tests.
+- [ ] No errors showing up in Javascript-Console.
+- [ ] Passed travis-ci Test.
 
 **Test Configuration**:
-* Firmware version:
+* node.js Version:
 * Hardware:
+* Browser:
 * Toolchain:
-* SDK:
+* Editor:
 
 ## Checklist:
 
