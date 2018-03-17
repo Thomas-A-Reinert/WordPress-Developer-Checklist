@@ -2,11 +2,10 @@
 
 ## Description
 
-Please include a summary of the change and which issue is fixed. If possible refer to the issue number like that Thomas-A-Reinert/WordPress-Developer-Checklist#2 .
+Please include a summary of the change and which issue is fixed. If possible refer to the issue number like that:
+- Thomas-A-Reinert/WordPress-Developer-Checklist#2
 
 Please also include relevant motivation and context. List any dependencies that are required for this change.
-
-Fixes # (issue)
 
 ## Type of change
 
